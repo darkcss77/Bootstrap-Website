@@ -1,0 +1,246 @@
+body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: rgba(0,0,0,0.2);
+}
+.wrapper{
+  background: rgba(0,0,0,0.1);
+}
+.section{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin: 50px 0;
+  background: #fff;
+}
+.section h2.section-head{
+  font-size: 32px;
+  font-family: serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section h2.section-head:after{
+  background: #e74c3c;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  margin: 20px auto;
+}
+h3.sub-head{
+  font-size: 24px;
+  font-family: serif;
+  margin-bottom: 10px;
+}
+h3.sub-head:after{
+  background: #fff;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+}
+#banner{
+  background-image: url("images/6.jpg");
+  width: 100%;
+  color: #fff;
+  height: 500px;
+  position: relative;
+}
+#banner::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+#banner .logo{
+  font-size: 1.5rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: hsl(139, 94%, 40%);
+}
+#menu li{
+  display: inline-block;
+  list-style: none;
+}
+#menu li a{
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 18px;
+}
+#menu li:hover a{
+  background: rgba(0,0,0,0.9);
+  text-decoration: none;
+  padding: 10px 18px;
+}
+.btn:hover{
+  border: 1px solid #4cd137;
+}
+#main-content{
+  margin-top: 100px;
+}
+#main-content span{
+  padding: 15px 0;
+  font-size: 38px;
+  font-family: serif;
+}
+#main-content p{
+  font-size: 16px;
+}
+#container .card{
+  height: 300px;
+  cursor: pointer;
+}
+#container .content h3{
+  font-size: 24px;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 10px;
+}
+#container #card1{
+  background-image: url("images/11.jpg");
+  background-size: cover;
+}
+#container .card h3{
+  color: #fff;
+  font-family: serif;
+  font-size: 24px;
+  position: relative;
+}
+#container .card::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+#container #card2{
+  background-image: url("images/08.jpg");
+  background-size: cover;
+}
+#container #card3{
+  background-image: url("images/14.jpg");
+  background-size: cover;
+}
+#container #card4{
+  background-image: url("images/02.jpg");
+  background-size: cover;
+}
+#testimonial .content{
+  margin: 0 auto;
+  text-align: center;
+}
+#testimonial .content img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 6px 2px rgba(0,0,0,0.2);
+}
+#testimonial .content h3{
+  font-size: 22px;
+  font-family: serif;
+  font-weight: bold;
+  margin-top: 10px;
+}
+#product-section #card{
+  text-align: center;
+  height: 300px;
+  border-radius: 7px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  color: #000;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.25);
+}
+#product-section #card img{
+  width: 100%;
+  padding: 10px 40px;
+  height: 50%;
+}
+#product-section #card .content h3{
+  font-size: 18px;
+  font-family: Helvetica ,sans-serif;
+  font-weight: bold;
+  color:#e74c3c;
+}
+#product-section #card .content input[type="submit"]{
+  border: 0;
+  outline: 0;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  background:  #e74c3c;
+}
+#footer{
+  width: 100%;
+  background: #3A657D;
+  color: #fff;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+#main-footer .content p{
+  font-size: 16px;
+}
+#main-footer .content ul li{
+  margin: 10px 0;
+  font-size: 16px;
+}
+#footer-links{
+  box-sizing: border-box;
+  background: #34485F;
+  color: #fff;
+  padding-top: 10px;
+}
+#footer-links ul li{
+  display: inline-block;
+}
+#footer-links li span a{
+  display: block;
+  width: 25px;
+  height: 25px;
+  line-height:25px;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+  color: rgba(0,0,0,0.8);
+  text-align: center;
+  margin: 0 5px;
+}
+/* Code for website Responsiveness */
+
+@media (max-width:992px){
+  #banner .logo{
+    text-align: center;
+  }
+  #menu{
+    margin:-30px -30px;
+  }
+  .card{
+     margin-top: 10px;
+  }
+}
+@media (max-width:768px){
+  .card{
+     margin-top: 10px;
+  }
+  #testimonial .content{
+    margin-top: 20px;
+  }
+  #footer-links{
+    text-align: center;
+  }
+  .list-unstyled{
+    margin-top: 10px;
+  }
+  #main-footer .content{
+    margin-top: 20px;
+  }
+}
